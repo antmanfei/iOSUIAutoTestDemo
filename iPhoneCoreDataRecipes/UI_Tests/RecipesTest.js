@@ -29,4 +29,4 @@ test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化�
         Finder.findElementByName("饺子").buttons()[0].tap();
         newCellsLength = Finder.findElementsByClassType("TableCell").length
         assertEquals(newCellsLength,oldCellsLength-1);
-    }
+    });
