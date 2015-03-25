@@ -22,11 +22,11 @@ test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化�
     });
 */
 test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化来判断测试是否成功",
-    function(){
-        oldCellsLength = Finder.findElementByName("Empty list").cells().length
-        Finder.findElementByName("Edit").tap();
-        Finder.findElementByName("Delete 饺子").tap();
-        Finder.findElementByName("饺子").buttons()[0].tap();
-        newCellsLength = Finder.findElementsByClassType("TableCell").length
-        assertEquals(newCellsLength,oldCellsLength-1);
-    });
+     function(){
+     oldCellsLength = Finder.findElementByName("Empty list").cells().length
+     Finder.findElementByName("Edit").tap();
+     Finder.findElementByName("饺子").tap();
+     Finder.findElementByName("饺子").buttons()[0].tap();
+     newCellsLength = Finder.findElementsByClassType("TableCell").length
+     assertEquals(newCellsLength,oldCellsLength-1);
+     });
