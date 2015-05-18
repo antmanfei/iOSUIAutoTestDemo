@@ -21,6 +21,7 @@ test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化�
         assertEquals(newCellsLength,oldCellsLength-1);
     });
 */
+/*
 test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化来判断测试是否成功",
      function(){
      oldCellsLength = Finder.findElementByName("Empty list").cells().length
@@ -29,4 +30,4 @@ test("删除刚才添加的饺子菜单，通过判断总菜单数量的变化�
      Finder.findElementByName("饺子").buttons()[0].tap();
      newCellsLength = Finder.findElementsByClassType("TableCell").length
      assertEquals(newCellsLength,oldCellsLength-1);
-     });
+     });*/
